@@ -1,0 +1,22 @@
+<div class="container px-4 py-5" id="#skills">
+  <h2 class="pb-2 border-bottom">Skills</h2>
+
+  <div
+    class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5"
+  >
+    <div *ngFor="let item of lista">
+      <div class="col d-flex align-items-start">
+        <i
+          [class]="item.imagem"
+          class="bi text-body-secondary flex-shrink-0 me-3"
+        ></i>
+        <div>
+          <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">
+            {{ item.titulo }}
+          </h3>
+          <p>{{ item.texto }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
