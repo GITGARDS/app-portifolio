@@ -6,15 +6,15 @@ export type MockRotasModel = {
 export const MOCK_ROTAS: MockRotasModel[] = [
   {
     label: 'Sobre',
-    link: '/sobre',
+    link: '#sobre',
   },
   {
     label: 'Stacks',
-    link: '/stacks',
+    link: '#stacks',
   },
   {
     label: 'Projetos',
-    link: '/projetos',
+    link: '#projetos',
   },
 ];
 

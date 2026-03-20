@@ -1,11 +1,13 @@
 import { Component, signal } from "@angular/core";
-import { RouterModule } from "@angular/router";
-import { Header } from "./pages/header/header";
+import { Header } from "./components/header/header";
+import { Projetos } from "./pages/projetos/projetos";
+import { Sobre } from "./pages/sobre/sobre";
+import { Stacks } from "./pages/stacks/stacks";
 
 @Component({
   selector: 'app-root',
-  imports: [Header, RouterModule],
-  templateUrl: "./app.html",
+  imports: [Header, Sobre, Stacks, Projetos],
+  templateUrl: './app.html',
   styles: [],
 })
 export class App {
