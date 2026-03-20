@@ -11,7 +11,7 @@ import { MatMenuModule } from "@angular/material/menu";
 })
 export class HeaderTheme {
 
-  icone = signal<string>('light_mode');
+  icone = signal<string>('dark_mode');
   
   toggleTheme() {
     if (document.body.classList.contains('light-mode')) {
