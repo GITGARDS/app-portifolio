@@ -1,0 +1,32 @@
+<mat-card class="flex gap-2 p-2 group">
+  <mat-card-header>
+    <mat-card-title class="text-2xl">{{ projeto.titulo }}</mat-card-title>
+  </mat-card-header>
+  <div class="h-48 overflow-hidden rounded-lg">
+    <img
+      mat-card-image
+      loading="lazy"
+      decoding="async"
+      fetchpriority="high"
+      [src]="projeto.capa"
+      alt="imagem"
+      width="200"
+      class="rounded-lg opacity-90 h-full w-full object-cover group-hover:scale-105 transition duration-300"
+      priority
+    />
+  </div>
+  <mat-card-content class="h-36 overflow-hidden">
+    <p class="text-[12px]">
+      {{ projeto.descricao }}
+    </p>
+  </mat-card-content>
+
+  <mat-card-actions>
+    <a mat-button matButton="filled" [href]="projeto.href" target="_blank" class="w-full group">
+      <div class="flex justify-between gap-2">
+        <span>Saber Mais</span>
+        <span class="block group-hover:ms-0.5 transition-all duration-300"> &rarr; </span>
+      </div>
+    </a>
+  </mat-card-actions>
+</mat-card>
