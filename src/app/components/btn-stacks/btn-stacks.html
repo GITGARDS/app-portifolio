@@ -1,0 +1,13 @@
+<mat-card appearance="filled" class="h-52 flex gap-3 px-2">
+  <mat-card-header>
+    <mat-card-title>Stacks</mat-card-title>
+  </mat-card-header>
+
+  <div class="flex flex-wrap gap-2">
+    @for (item of stacks; track $index) {
+      <span class="px-2 py-1 text-[14px] font-semibold text-gray-700 bg-gray-200 rounded-full border border-gray-400">
+        {{ item }}
+      </span>
+    }
+  </div>
+</mat-card>

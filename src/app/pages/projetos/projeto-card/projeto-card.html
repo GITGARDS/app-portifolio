@@ -15,11 +15,15 @@
       priority
     />
   </div>
+  
+  <app-btn-stacks [stacks]="projeto.stacks" />
+
   <mat-card-content class="h-36 overflow-hidden">
-    <p class="text-[12px]">
+    <p class="text-[12px] opacity-60">
       {{ projeto.descricao }}
     </p>
   </mat-card-content>
+
 
   <mat-card-actions>
     <a mat-button matButton="filled" [href]="projeto.href" target="_blank" class="w-full group">
