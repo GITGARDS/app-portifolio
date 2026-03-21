@@ -1,11 +1,12 @@
 import { CommonModule } from "@angular/common";
 import { Component, Input } from "@angular/core";
 import { MatCardModule } from "@angular/material/card";
+import { MatProgressBarModule } from "@angular/material/progress-bar";
 import { MockStackModel } from "../../../shared/mock";
 
 @Component({
   selector: 'app-stack-card',
-  imports: [CommonModule, MatCardModule],
+  imports: [CommonModule, MatCardModule, MatProgressBarModule],
   templateUrl: './stack-card.html',
   styleUrl: './stack-card.css',
 })

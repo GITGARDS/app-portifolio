@@ -9,7 +9,7 @@ export const MOCK_ROTAS: MockRotasModel[] = [
     link: '#sobre',
   },
   {
-    label: 'Stacks',
+    label: 'Habilidades',
     link: '#stacks',
   },
   {
@@ -22,6 +22,7 @@ export type MockStackModel = {
   title: string;
   descricao: string;
   icone: string;
+  progress: number;
 };
 
 export const MOCK_STACKS: MockStackModel[] = [
@@ -29,86 +30,103 @@ export const MOCK_STACKS: MockStackModel[] = [
     title: 'Java',
     descricao: 'Linguagem',
     icone: 'images/java.webp',
+    progress: 80,
   },
   {
     title: 'Delphi',
     descricao: 'Linguagem',
     icone: 'images/delphi.png',
+    progress: 80,
   },
   {
     title: 'Typescript',
     descricao: 'Linguagem',
     icone: 'images/typescript.png',
+    progress: 70,
   },
   {
     title: 'Node.js',
     descricao: 'Ambiente',
     icone: 'images/nodejs.png',
+    progress: 60,
   },
   {
     title: 'Next.js',
     descricao: 'Framework',
     icone: 'images/Nextjs.webp',
+    progress: 70,
   },
   {
     title: 'Angular',
     descricao: 'Framework',
     icone: 'images/angular.png',
+    progress: 80,
   },
   {
     title: 'Figma',
     descricao: 'Interface Design',
     icone: 'images/figma.png',
+    progress: 50,
   },
   {
     title: 'MySql',
     descricao: 'Banco de dados',
     icone: 'images/mysql.png',
+    progress: 90,
   },
   {
     title: 'Postgresql',
     descricao: 'Banco de dados',
     icone: 'images/postgresql.png',
+    progress: 90,
   },
   {
     title: 'Prisma',
     descricao: 'ORM',
     icone: 'images/prisma.png',
+    progress: 60,
   },
   {
     title: 'Drizzle',
     descricao: 'ORM',
     icone: 'images/drizzle.png',
+    progress: 50,
   },
   {
     title: 'Neon',
     descricao: 'Database',
     icone: 'images/neon.jpg',
+    progress: 50,
   },
   {
     title: 'Stripe',
     descricao: 'Payment',
     icone: 'images/Stripe.webp',
+    progress: 50,
   },
   {
     title: 'Tailwind',
     descricao: 'estilização',
     icone: 'images/tailwindcss.webp',
+    progress: 80,
   },
   {
     title: 'Vercel',
     descricao: 'Provedor',
     icone: 'images/Vercel.webp',
+    progress: 80,
   },
   {
     title: 'Supabase',
     descricao: 'Database',
     icone: 'images/supabase.webp',
+    progress: 80,
   },
   {
     title: 'Docker',
     descricao: 'Conteiner',
     icone: 'images/docker.png',
+    progress: 60,
   },
 ];
 
@@ -181,14 +199,14 @@ export const MOCK_PROJETOS: MockProjetoModel[] = [
     stacks: ['NextJs', 'Typescript', 'Tailwind'],
   },
   {
-    titulo: 'app-posto',
+    titulo: 'Posto',
     descricao: '',
     href: 'https://app-posto-eight.vercel.app/',
     capa: 'images/projetos/bomba.png',
     stacks: ['Angular', 'rxjs', 'scss', 'Typescript'],
   },
   {
-    titulo: 'app-vidro',
+    titulo: 'Vidracaria',
     descricao: '',
     href: 'https://app-vidro.vercel.app/',
     capa: 'images/projetos/app-vidros.jpg',

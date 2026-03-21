@@ -1,8 +1,10 @@
-<mat-card class="flex items-center p-4 gap-2" appearance="filled">
+<mat-card class="flex items-center p-4 gap-2" appearance="outlined">
   <div class="flex tems-center justify-center h-14 w-14">
     <img mat-card-image [src]="stack.icone" alt="Photo of a Shiba Inu" width="60" />
   </div>
   <mat-card-header>
     <mat-card-title class="text-center">{{ stack.title }}</mat-card-title>
   </mat-card-header>
+  <span class="text-[12px] opacity-60">{{ stack.progress }}%</span>
+  <mat-progress-bar mode="determinate" [value]="stack.progress" color="primary"></mat-progress-bar>
 </mat-card>
