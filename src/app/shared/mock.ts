@@ -212,4 +212,11 @@ export const MOCK_PROJETOS: MockProjetoModel[] = [
     capa: 'images/projetos/app-vidros.jpg',
     stacks: ['Angular', 'rxjs','tailwind', 'Typescript'],
   },
+  {
+    titulo: 'Compras',
+    descricao: '',
+    href: 'https://app-compras-seven.vercel.app',
+    capa: 'images/projetos/app-compras.jpg',
+    stacks: ['Angular', 'rxjs','tailwind', 'Typescript', 'Signals'],
+  },
 ];
