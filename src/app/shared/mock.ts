@@ -219,4 +219,11 @@ export const MOCK_PROJETOS: MockProjetoModel[] = [
     capa: 'images/projetos/app-compras.jpg',
     stacks: ['Angular', 'rxjs','tailwind', 'Typescript', 'Signals'],
   },
+  {
+    titulo: 'Modern Store',
+    descricao: 'Modern Angular Ecommerce App',
+    href: 'https://ng-ecommerce-lyart.vercel.app/',
+    capa: 'images/projetos/ng-ecommerce.jpg',
+    stacks: ['Angular', 'rxjs', 'ngrx','tailwind', 'Typescript', 'Signals'],
+  },
 ];
