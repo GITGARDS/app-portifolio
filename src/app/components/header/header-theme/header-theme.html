@@ -1,7 +1,8 @@
 <div class="h-full flex items-center justify-center lg:justify-start gap-4">
-  <button matButton="filled" (click)="toggleTheme()">
-
-    <mat-icon>{{ icone() }}</mat-icon>    
-
+  <button
+    (click)="toggleTheme()"
+    class="p-2 text-zinc-700 dark:text-zinc-300 hover:bg-zinc-100 dark:hover:bg-zinc-800 rounded-full transition-colors"
+  >
+    <mat-icon>{{ icone() }}</mat-icon>
   </button>
 </div>
