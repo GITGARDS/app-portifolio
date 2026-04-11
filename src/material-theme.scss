@@ -21,11 +21,11 @@ html {
 
   @include mat.button-overrides(
     (
-      text-container-shape: 0%,
-      protected-container-shape: 0%,
-      outlined-container-shape: 0%,
-      filled-container-shape: 0%,
-      tonal-container-shape: 0%,
+      // text-container-shape: 0%,
+      // protected-container-shape: 0%,
+      // outlined-container-shape: 0%,
+      // filled-container-shape: 0%,
+      // tonal-container-shape: 0%,
     )
   );
 }

@@ -1,4 +1,4 @@
-import { Component, Input } from "@angular/core";
+import { Component, input } from "@angular/core";
 import { MatCardModule } from "@angular/material/card";
 
 @Component({
@@ -8,5 +8,5 @@ import { MatCardModule } from "@angular/material/card";
   styleUrl: './btn-stacks.css',
 })
 export class BtnStacks {
-  @Input() stacks: string[] = [];
+  stacks = input.required<string[]>( );
 }

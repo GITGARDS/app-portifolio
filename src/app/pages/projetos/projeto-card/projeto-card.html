@@ -1,36 +1,35 @@
-<mat-card class="flex gap-2 p-2 group">
+<mat-card class="flex gap-2 p-2 group hover:!shadow-2xl transition-all !border-gray-200" appearance="outlined">
   <mat-card-header>
-    <mat-card-title class="text-2xl">{{ projeto.titulo }}</mat-card-title>
+    <mat-card-title class="text-2xl">{{ projeto().titulo }}</mat-card-title>
   </mat-card-header>
-  <div class="h-48 overflow-hidden rounded-lg">
+  <div class="h-48 aspect-video overflow-hidden rounded-lg">
     <img
       mat-card-image
       loading="lazy"
       decoding="async"
       fetchpriority="high"
-      [src]="projeto.capa"
+      [src]="projeto().capa"
       alt="imagem"
       width="200"
-      class="rounded-lg opacity-90 h-full w-full object-cover group-hover:scale-105 transition duration-300"
+      class="rounded-lg opacity-90 h-full w-full object-cover"
       priority
     />
   </div>
-  
-  <app-btn-stacks [stacks]="projeto.stacks" />
+
+  <app-btn-stacks [stacks]="projeto().stacks" />
 
   <mat-card-content class="h-36 overflow-hidden">
     <p class="text-[12px] opacity-60">
-      {{ projeto.descricao }}
+      {{ projeto().descricao }}
     </p>
   </mat-card-content>
 
-
   <mat-card-actions>
-    <a mat-button matButton="filled" [href]="projeto.href" target="_blank" class="w-full group">
+    <a mat-button matButton="tonal" [href]="projeto().href" target="_blank" class="w-full group">
       <div class="flex justify-between gap-2">
         <span>Saber Mais</span>
         <span class="block group-hover:ms-0.5 transition-all duration-300"> &rarr; </span>
       </div>
     </a>
   </mat-card-actions>
-</mat-card>
+</mat-card> 
