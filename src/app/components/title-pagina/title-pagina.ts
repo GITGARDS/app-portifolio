@@ -1,8 +1,9 @@
+import { TitleCasePipe } from "@angular/common";
 import { Component, Input } from "@angular/core";
 
 @Component({
   selector: 'app-title-pagina',
-  imports: [],
+  imports: [TitleCasePipe],
   templateUrl: './title-pagina.html',
   styleUrl: './title-pagina.css',
 })

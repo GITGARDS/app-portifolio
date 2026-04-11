@@ -1,8 +1,8 @@
-<mat-card class="flex gap-2 p-2 group hover:!shadow-2xl transition-all !border-gray-200" appearance="outlined">
-  <mat-card-header>
-    <mat-card-title class="text-2xl">{{ projeto().titulo }}</mat-card-title>
-  </mat-card-header>
-  <div class="h-48 aspect-video overflow-hidden rounded-lg">
+<mat-card
+  class="flex gap-2 p-0 group hover:!shadow-2xl hover:!shadow-indigo-300  transition-all !border-gray-200 overflow-hidden hover:!border-indigo-400"
+  appearance="outlined"
+>
+  <div class="h-48 aspect-video overflow-hidden">
     <img
       mat-card-image
       loading="lazy"
@@ -11,10 +11,13 @@
       [src]="projeto().capa"
       alt="imagem"
       width="200"
-      class="rounded-lg opacity-90 h-full w-full object-cover"
+      class="!rounded-b-none opacity-90 h-full w-full object-cover group-hover:scale-110 transition-transform duration-300"
       priority
     />
   </div>
+  <mat-card-header>
+    <mat-card-title class="text-2xl">{{ projeto().titulo }}</mat-card-title>
+  </mat-card-header>
 
   <app-btn-stacks [stacks]="projeto().stacks" />
 
@@ -32,4 +35,4 @@
       </div>
     </a>
   </mat-card-actions>
-</mat-card> 
+</mat-card>
