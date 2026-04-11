@@ -1,5 +1,5 @@
 <mat-card
-  class="flex gap-2 p-0 group hover:!shadow-2xl hover:!shadow-indigo-300  transition-all !border-gray-200 overflow-hidden hover:!border-indigo-400"
+  class="flex gap-2 p-0 group hover:!shadow-2xl hover:!shadow-indigo-300 transition-all !border-gray-200 overflow-hidden hover:!border-indigo-400"
   appearance="outlined"
 >
   <div class="h-48 aspect-video overflow-hidden">
@@ -21,18 +21,32 @@
 
   <app-btn-stacks [stacks]="projeto().stacks" />
 
-  <mat-card-content class="h-36 overflow-hidden">
+  <!-- <mat-card-content class="h-36 overflow-hidden">
     <p class="text-[12px] opacity-60">
       {{ projeto().descricao }}
     </p>
-  </mat-card-content>
+  </mat-card-content> -->
 
-  <mat-card-actions>
-    <a mat-button matButton="tonal" [href]="projeto().href" target="_blank" class="w-full group">
-      <div class="flex justify-between gap-2">
-        <span>Saber Mais</span>
-        <span class="block group-hover:ms-0.5 transition-all duration-300"> &rarr; </span>
-      </div>
+  <mat-card-actions class="!flex !flex-row !gap-1">
+    <a
+      matIconButton
+      [href]="projeto().urlProj"
+      target="_blank"
+      class="!bg-blue-500 !text-white"
+      matTooltip="Url do projeto"
+      matTooltipPosition="above"
+    >
+      <mat-icon>open_in_new</mat-icon>
+    </a>
+    <a
+      matIconButton
+      [href]="projeto().urlRepo"
+      target="_blank"
+      class="!bg-blue-500 !text-white"
+      matTooltip="Url do repositorio"
+      matTooltipPosition="above"
+    >
+      <mat-icon>code</mat-icon>
     </a>
   </mat-card-actions>
 </mat-card>

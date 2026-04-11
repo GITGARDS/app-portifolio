@@ -1,9 +1,8 @@
 import { Component, input } from "@angular/core";
-import { MatCardModule } from "@angular/material/card";
 
 @Component({
   selector: 'app-btn-stacks',
-  imports: [MatCardModule],
+  imports: [],
   templateUrl: './btn-stacks.html',
   styleUrl: './btn-stacks.css',
 })

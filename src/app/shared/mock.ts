@@ -133,9 +133,10 @@ export const MOCK_STACKS: MockStackModel[] = [
 export type MockProjetoModel = {
   titulo: string;
   descricao: string;
-  href: string;
   capa: string;
   stacks: string[];
+  urlRepo: string;
+  urlProj: string;
 };
 
 export const MOCK_PROJETOS: MockProjetoModel[] = [
@@ -143,7 +144,6 @@ export const MOCK_PROJETOS: MockProjetoModel[] = [
     titulo: 'Financas',
     descricao:
       'Finanças é a gestão do dinheiro, especialmente de empresas, organizações ou governos. Ela envolve o processo de aquisição, gasto e investimento de capital.',
-    href: 'https://tnext-finance.vercel.app/',
     capa: 'images/projetos/finance.jpg',
     stacks: [
       'Next.js',
@@ -156,74 +156,75 @@ export const MOCK_PROJETOS: MockProjetoModel[] = [
       'Neon',
       'Zod',
     ],
+    urlRepo: 'https://github.com/GITGARDS/tnext-finance',
+    urlProj: 'https://tnext-finance.vercel.app',
   },
 
   {
     titulo: 'ScraperFlow',
     descricao:
       'Automatize sites e extraia dados sem esforço algum — sem precisar de codificação. O flow builder do FlowScraper e as ações de IA personalizáveis ​​tornam a automação da web fácil, eficiente e flexível.',
-    href: 'https://tnext-scrape-flow.vercel.app/',
     capa: 'images/projetos/scrape.jpg',
-    stacks: [
-      'Next.Js',
-      'Typescript',
-      'Shadcn UI',
-      'Tailwind',
-      'Prisma',
-      'Clerk',
-      'Stripe',
-      'Zod',
-    ],
+    stacks: ['Next.Js', 'Typescript', 'Shadcn UI', 'Tailwind', 'Prisma', 'Clerk', 'Stripe', 'Zod'],
+    urlRepo: 'https://github.com/GITGARDS/tnext-scrape-flow',
+    urlProj: 'https://tnext-scrape-flow.vercel.app',
   },
   {
     titulo: 'Landing Page',
     descricao:
       'Uma landing page é uma página da web que visa atrair visitantes, coletar dados e convertê-los em clientes ou leads. Também é conhecida como página de conversão, de captura ou de destino',
-    href: 'https://tnext-saaswebsite-landingpage.vercel.app/',
     capa: 'images/projetos/landing-page.png',
     stacks: ['Next.Js', 'Typescript', 'Tailwind', 'Framer motion'],
+    urlRepo: 'https://github.com/GITGARDS/tnext-saaswebsite-landingpage',
+    urlProj: 'https://tnext-saaswebsite-landingpage.vercel.app',
   },
   {
     titulo: 'Clone netflix',
     descricao:
       'Netflix é um serviço online de streaming norte-americano lançado em 2010 e é disponível em mais de 190 países.',
-    href: 'https://next-netflix-clone-nine.vercel.app',
     capa: 'images/projetos/netflix-clone.png',
     stacks: ['NextJs', 'Typescript', 'Shadcn UI', 'Tailwind', 'Clerk', 'Prisma', 'Neon'],
+    urlRepo: 'https://github.com/GITGARDS/tnext-netflix-clone',
+    urlProj: 'https://next-netflix-clone-nine.vercel.app',
   },
   {
     titulo: 'Page form',
     descricao: 'Crie formulários com um incrível designer de arrastar e soltar',
-    href: 'https://tnext-page-form.vercel.app/',
     capa: 'images/projetos/page-form.png',
     stacks: ['NextJs', 'Typescript', 'Tailwind'],
+    urlRepo: 'https://github.com/GITGARDS/tnext-page-form',
+    urlProj: 'https://tnext-page-form.vercel.app/',
   },
   {
     titulo: 'Posto',
     descricao: '',
-    href: 'https://app-posto-eight.vercel.app/',
     capa: 'images/projetos/bomba.png',
     stacks: ['Angular', 'rxjs', 'scss', 'Typescript'],
+    urlRepo: 'https://github.com/GITGARDS/app-posto',
+    urlProj: 'https://app-posto-eight.vercel.app/',
   },
   {
     titulo: 'Vidracaria',
     descricao: '',
-    href: 'https://app-vidro.vercel.app/',
     capa: 'images/projetos/app-vidros.jpg',
-    stacks: ['Angular', 'rxjs','tailwind', 'Typescript'],
+    stacks: ['Angular', 'rxjs', 'tailwind', 'Typescript'],
+    urlRepo: 'https://github.com/GITGARDS/app-vidro',
+    urlProj: 'https://app-vidro.vercel.app/',
   },
   {
     titulo: 'Compras',
     descricao: '',
-    href: 'https://app-compras-seven.vercel.app',
     capa: 'images/projetos/app-compras.jpg',
-    stacks: ['Angular', 'rxjs','tailwind', 'Typescript', 'Signals'],
+    stacks: ['Angular', 'rxjs', 'tailwind', 'Typescript', 'Signals'],
+    urlRepo: 'https://github.com/GITGARDS/app-compras',
+    urlProj: 'https://app-compras-seven.vercel.app',
   },
   {
     titulo: 'Modern Store',
     descricao: 'Modern Angular Ecommerce App',
-    href: 'https://ng-ecommerce-lyart.vercel.app/',
     capa: 'images/projetos/ng-ecommerce.jpg',
-    stacks: ['Angular', 'rxjs', 'ngrx','tailwind', 'Typescript', 'Signals'],
+    stacks: ['Angular', 'rxjs', 'ngrx', 'tailwind', 'Typescript', 'Signals'],
+    urlRepo: 'https://github.com/GITGARDS/ng-ecommerce',
+    urlProj: 'https://ng-ecommerce-lyart.vercel.app/',
   },
 ];
