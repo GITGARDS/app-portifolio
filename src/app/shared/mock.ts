@@ -217,7 +217,6 @@ export const MOCK_PROJETOS: MockProjetoModel[] = [
     urlRepo: 'https://github.com/GITGARDS/ng-ecommerce',
     urlProj: 'https://ng-ecommerce-lyart.vercel.app/',
   },
-
   {
     titulo: 'Folha de Pagamento',
     descricao: '',
@@ -225,5 +224,13 @@ export const MOCK_PROJETOS: MockProjetoModel[] = [
     stacks: ['Angular', 'rxjs', 'tailwind'],
     urlRepo: 'https://github.com/GITGARDS/app-folha',
     urlProj: 'https://app-folha.vercel.app/',
+  },
+  {
+    titulo: 'Estoque',
+    descricao: '',
+    capa: 'images/projetos/app-estoque.png',
+    stacks: ['Angular', 'rxjs', 'tailwind', 'firebase'],
+    urlRepo: 'https://github.com/GITGARDS/app-estoque',
+    urlProj: 'https://app-estoque-ebon.vercel.app/',
   },
 ];
