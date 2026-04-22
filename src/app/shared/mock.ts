@@ -221,9 +221,9 @@ export const MOCK_PROJETOS: MockProjetoModel[] = [
     titulo: 'Folha de Pagamento',
     descricao: '',
     capa: 'images/projetos/app-folha.png',
-    stacks: ['Angular', 'rxjs', 'tailwind'],
-    urlRepo: 'https://github.com/GITGARDS/app-folha',
-    urlProj: 'https://app-folha.vercel.app/',
+    stacks: ['Angular', 'rxjs', 'tailwind', 'firebase', '@ngrx/signals'],
+    urlRepo: 'https://github.com/GITGARDS/ng-folhaPro',
+    urlProj: 'https://ng-folha-pro.vercel.app',
   },
   {
     titulo: 'Estoque',
