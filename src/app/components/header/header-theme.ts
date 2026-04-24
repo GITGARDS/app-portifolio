@@ -1,18 +1,23 @@
 import { Component, signal } from "@angular/core";
-import { MatButtonModule } from "@angular/material/button";
+import { MatButtonModule, MatIconButton } from "@angular/material/button";
 import { MatIconModule } from "@angular/material/icon";
 import { MatMenuModule } from "@angular/material/menu";
 
 @Component({
   selector: 'app-header-theme',
-  imports: [MatButtonModule, MatIconModule, MatMenuModule],
-  templateUrl: './header-theme.html',
-  styleUrl: './header-theme.css',
+  imports: [MatButtonModule, MatIconModule, MatMenuModule, MatIconButton],
+  template: `
+    <div class="h-full flex items-center justify-center lg:justify-start gap-4">
+      <button mat-icon-button (click)="toggleTheme()">
+        <mat-icon class="!text-[var(--mat-sys-primary)]">{{ icone() }}</mat-icon>
+      </button>
+    </div>
+  `,
+  styles: ``,
 })
 export class HeaderTheme {
-
   icone = signal<string>('dark_mode');
-  
+
   toggleTheme() {
     if (document.body.classList.contains('light-mode')) {
       document.body.classList.remove('light-mode');

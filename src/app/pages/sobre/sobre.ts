@@ -1,10 +1,11 @@
 import { Component, signal } from "@angular/core";
+import { MatButtonModule, MatIconButton } from "@angular/material/button";
 import { MatIcon } from "@angular/material/icon";
 import { TitlePagina } from "../../components/title-pagina/title-pagina";
 
 @Component({
   selector: 'app-sobre',
-  imports: [TitlePagina, MatIcon],
+  imports: [TitlePagina, MatIcon, MatButtonModule, MatIconButton],
   templateUrl: './sobre.html',
   styleUrl: './sobre.css',
   styles: [
