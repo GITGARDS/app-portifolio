@@ -145,8 +145,8 @@ export const MOCK_PROJETOS: MockProjetoModel[] = [
     descricao: '',
     capa: 'images/projetos/app-folha.png',
     stacks: ['Angular', 'rxjs', 'tailwind', 'firebase', '@ngrx/signals'],
-    urlRepo: 'https://github.com/GITGARDS/ng-folhaPro',
-    urlProj: 'https://ng-folha-pro.vercel.app',
+    urlRepo: 'https://github.com/GITGARDS/ng-folha-pro',
+    urlProj: 'https://ng-folha-pro.vercel.app/',
   },
   {
     titulo: 'Modern Store',
